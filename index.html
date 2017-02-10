@@ -5,9 +5,15 @@
     <title>Seattle Neighborhood Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- TODO -->
+    <!-- DONE -->
     <!-- Let's put the Handlebars template here, in a <script> tag -->
-
+    <script id="neighborhood-template" type="template/x-handlebars-template">
+      <h2>{{name}}</h2>
+      <p>A neighborhood in the city of {{city}}</p>
+      <p>Population: {{population}}</p>
+      <p>Founded in {{founded}}</p>
+      {{{body}}}
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
